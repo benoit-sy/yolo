@@ -3,9 +3,9 @@
   "name": "Trying things in and out",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "../favicon.png",
       "type": "image/png",
-      "sizes": "1024x1024"
+      "sizes": "640x640"
     }
   ],
   "start_url": "./index.html",
