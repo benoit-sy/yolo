@@ -55,13 +55,24 @@
 
             main {
                 padding: 20px;
-                padding-bottom: calc(20px + var(--safe-area-bottom));
                 flex: 1;
             }
 
             footer {
+                border-block-start: 1px solid #ddd;
+                display: flex;
+                padding: 20px;
+                padding-bottom: calc(20px + var(--safe-area-bottom));
+
                 input {
+                    flex: 1;
+                    border: none;
                     font-size: 0.8rem;
+                    outline: none;
+                }
+
+                &:focus-within {
+                    border-color: #000028;
                 }
             }
 
