@@ -22,7 +22,13 @@
             :root {
                 /* Sets a safe area for "notch" devices (iPhone X and later) */
                 --safe-area-top: env(safe-area-inset-top);
-                --safe-area-bottom: env(safe-area-inset-bottom, 20px);
+                --safe-area-bottom: env(safe-area-inset-bottom);
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
             }
 
             body {
@@ -36,7 +42,7 @@
                 /* Smoother scrolling on older iOS versions */
                 -webkit-overflow-scrolling: touch;
 
-                height: 100dvh;
+                min-height: 100dvh;
                 display: flex;
                 flex-direction: column;
             }
@@ -62,7 +68,7 @@
                 border-block: 1px solid #ddd;
                 display: flex;
                 padding: 20px;
-                padding-bottom: var(--safe-area-bottom);
+                padding-bottom: calc(20px * var(--safe-area-bottom));
 
                 input {
                     flex: 1;
