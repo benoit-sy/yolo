@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+
+        <title>Bikesheding Stuff</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <meta name="apple-mobile-web-app-title" content="My App" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#4781af" />
+
+        <style>
+            :root {
+                /* Sets a safe area for "notch" devices (iPhone X and later) */
+                --safe-area-top: env(safe-area-inset-top);
+                --safe-area-bottom: env(safe-area-inset-bottom);
+            }
+
+            body {
+                margin: 0;
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Helvetica, Arial, sans-serif;
+                background-color: #ffffff;
+                /* Prevents text size adjustments when rotating the screen */
+                -webkit-text-size-adjust: 100%;
+                /* Smoother scrolling on older iOS versions */
+                -webkit-overflow-scrolling: touch;
+            }
+
+            header {
+                padding-top: var(--safe-area-top);
+                background-color: #f8f8f8;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            main {
+                padding: 20px;
+                padding-bottom: calc(20px + var(--safe-area-bottom));
+            }
+
+            /* Essential for clickable elements on iOS */
+            button,
+            a {
+                cursor: pointer;
+                /* Removes the default gray highlight on tap */
+                -webkit-tap-highlight-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>iOS Header</h1>
+        </header>
+
+        <main>
+            <p>This layout respects the notch and the home indicator.</p>
+        </main>
+    </body>
+</html>

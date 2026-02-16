@@ -1,0 +1,16 @@
+{
+  "short_name": "Bikesheding Stuff",
+  "name": "Trying things in and out",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#4781af"
+}
