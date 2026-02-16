@@ -8,9 +8,9 @@
       "sizes": "1024x1024"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/yolo/ios",
   "theme_color": "#4781af"
 }
